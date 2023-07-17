@@ -8,7 +8,8 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 Replace "your_email@example.com" with your actual email address associated with your Bitbucket account. You can also choose a different filename and location for your SSH key if desired.
 
 #### Step 2. Add SSH key to your Bitbucket account:
-- Copy the contents of the public key file. On most systems, the public key file is located at `~/.ssh/id_rsa.pub`. If you are using docker container it is located at `/root/.ssh/id_rsa.pub`
+- Copy the contents of the public key file. On most systems, the public key file is located at `~/.ssh/id_rsa.pub`. If you are using docker container it is located at `/root/.ssh/id_rsa.pub` , ( **Generate the SSH key id_rsa.pub if the file does not exist,** from [here](https://github.com/rahulelex/generate-ssh-public-key-id_rsa.pub))
+
 - In your Bitbucket account, go to "Settings" or "Account Settings" and look for the "SSH keys" or "SSH access keys" section.
 - Click on "Add key" or "Add SSH key" and paste the contents of your public key into the provided field. Give the key a descriptive label if you want.
 - Save the key.
